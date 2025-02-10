@@ -1,0 +1,40 @@
+{
+    "name": "deepseek-translate-api",
+    "version": "0.0.1",
+    "description": "通过开发一个基于 Deepseek 的翻译 API，你可以充分利用其强大的翻译能力，同时满足个性化需求，提升应用的用户体验。",
+    "scripts": {
+        "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+        "dev": "env-cmd -r .env.js -e development nodemon ./src/index.ts",
+        "prepare": "husky install",
+        "husky": "husky add .husky/commit-msg \"npx --no-install commitlint --edit \"$1\"\""
+    },
+    "homepage": "https://xygeng.cn",
+    "keywords": [
+        "nodejs",
+        "typescript",
+        "translate",
+        "openai",
+        "deepseek",
+        "chatgpt"
+    ],
+    "author": "xygengcn",
+    "license": "ISC",
+    "devDependencies": {
+        "@commitlint/cli": "^17.4.4",
+        "@commitlint/config-conventional": "^17.4.4",
+        "@types/node": "^20.10.0",
+        "env-cmd": "^10.1.0",
+        "eslint": "^9.19.0",
+        "husky": "^8.0.3",
+        "nodemon": "^3.1.9",
+        "prettier": "^2.5.1",
+        "ts-node": "^10.9.2",
+        "tsc-alias": "^1.8.10",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.7.3"
+    },
+    "dependencies": {
+        "koa-api-plus": "^1.0.12",
+        "openai": "^4.83.0"
+    }
+}
