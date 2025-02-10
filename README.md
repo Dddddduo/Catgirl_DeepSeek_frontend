@@ -1,0 +1,2 @@
+# Catgirl_DeepSeek_frontend
+一个为使用Node.js、TypeScript和DeepSeek大模型开发的猫娘模拟器
